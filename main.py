@@ -1,3 +1,16 @@
+#####################################################################################
+#Program name  : main.py
+#Description   : This program is the complement of the previous intent analysis project
+#                 (https://github.com/christ1611/Predict-the-user-intention-with-Support-Vector-Machines-and-SVMBM25)
+#                 -The purpose of this program is to improve the accuracy of prediction by combinig the SVM and random forest
+#                 - By combining these two techniques, we can get the error less than 1%
+#Copyright     : Distribution, modification, reproduction, and copy are strictly prohibited to unauthorized persons.
+#Author        : Hotama Christianus Frederick (christianusfrederick@gmail.com)
+#Commit date   : January 2019
+######################################################################################
+#Function input: train.svm (Bm25 score for train file) and test.svm (Bm25 score for test file) 
+#Function output: prediction table
+
 import numpy as np
 from sklearn.externals.joblib import Memory
 from sklearn.datasets import load_svmlight_file
